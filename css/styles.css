@@ -12,7 +12,6 @@
 
 :root{
   --background-color: rgb(30, 30, 30);
-  --background-color2: whitesmoke;
   --title-font-color: rgb(230, 30, 30);
 }
 
@@ -113,10 +112,60 @@ li > a{
   animation: fadeIn 1s forwards;
 }
 
+
+
+
+
+/* section 2 */
+
 .projectsbox{
   width: 100%;
-  height: 500px;
-  background-color: var(--background-color2);
+  height: 700px;
+  background-color: rgb(130, 20, 20);
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 400px;
+  gap: 50px;
+}
+
+.project-apresentation{
+  background-color: grey;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.projectsbox > h3{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 35px;
+  text-decoration: underline;
+  font-family: 'Mono', sans-serif
+}
+
+.project-apresentation > img{
+  max-width: 280px;
+  height: 310px;
+}
+
+.project-apresentation > p{
+  font-family: 'Winky Sans', sans-serif;
+  width: 100%;
+  height: 10%;
+  background-color: darkgrey;
+  align-items: center;
+  font-size: 20px;
+  padding-top: 3px;
 }
 
 
