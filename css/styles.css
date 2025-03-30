@@ -54,6 +54,10 @@ section{
   cursor: pointer;
 }
 
+.headerdescription > div{
+  width: 20%;
+}
+
 .navcontent:hover{
   color: var(--title-font-color);
 }
@@ -66,11 +70,15 @@ li > a{
   text-decoration: none;
 }
 
+.contentapresentation{
+  position: relative;
+  top: 130px;
+}
+
 .apresentation{
-  border: 1px solid green;
   padding: 110px 0;
   width: 100%;
-  height: 581px;
+  height: 794px;
 }
 
 .pictureapresentation{
@@ -78,6 +86,7 @@ li > a{
   height: 125px;
   border-radius: 50%;
   justify-content: center;
+  align-items: center;
 }
 
 .profilepicture{
@@ -91,9 +100,12 @@ li > a{
 }
 
 .headerdescription{
+  display: flex;
   font-size: 15px;
   color: var(--title-font-color);
   text-align: center;
+  justify-content: center;
+  align-items: center;
   animation: fadeIn 1s forwards;
 }
 
@@ -137,35 +149,55 @@ li > a{
 }
 
 .project-apresentation{
-  background-color: grey;
   width: 300px;
   height: 350px;
   text-align: center;
   text-decoration: none;
   color: black;
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
 
 .projectsbox > h3{
   text-align: center;
   margin-top: 100px;
+  position: relative;
+  top: 20px;
   font-size: 35px;
-  text-decoration: underline;
-  font-family: 'Mono', sans-serif
+  font-family: 'Mono', sans-serif;
+  color: white;
 }
 
 .project-apresentation > img{
-  max-width: 280px;
-  height: 310px;
+  max-width: 240px;
+  height: 240px;
+  position: relative;
+  top: 35px;
 }
 
 .project-apresentation > p{
   font-family: 'Winky Sans', sans-serif;
-  width: 100%;
-  height: 10%;
-  background-color: darkgrey;
+  width: 101%;
+  height: 13%;
+  position: relative;
+  left: -1px;
+  bottom: -60px;
+  background-color: whitesmoke;
   align-items: center;
   font-size: 20px;
-  padding-top: 3px;
+  padding-top: 8px;
+  border-radius: 0 0 20px 20px;
+}
+
+.project-apresentation:hover{
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  transform: scale(1.05);
+  cursor: pointer
 }
 
 
