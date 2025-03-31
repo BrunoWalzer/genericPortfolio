@@ -12,7 +12,9 @@
 
 :root{
   --background-color: rgb(30, 30, 30);
+  --background-color2: rgb(130, 20, 20);
   --title-font-color: rgb(230, 30, 30);
+  --secundary-font-color: whitesmoke;
 }
 
 body{
@@ -35,7 +37,7 @@ section{
 /* Seletores de classes */
 #top-bar{
   position: static;
-  background-color: rgb(230, 30, 30);
+  background-color: var(--background-color2);
 }
 
 .navbar{
@@ -46,11 +48,10 @@ section{
 .item-list{
   list-style: none;
   display: inline-block;
-  padding: 15px 20px;
 }
 
 .item-list:hover{
-  background-color: var(--background-color);
+  background-color: var(--secundary-font-color);
   cursor: pointer;
 }
 
@@ -63,7 +64,8 @@ section{
 }
 
 .navcontent{
-  color: var(--background-color);
+  color: var(--secundary-font-color);
+  padding: 15px 20px;
 }
 
 li > a{
@@ -127,14 +129,12 @@ li > a{
 
 
 
-
 /* section 2 */
 
 .projectsbox{
   width: 100%;
   height: 700px;
   background-color: rgb(130, 20, 20);
-  border: 1px solid white;
   justify-content: center;
   align-items: center;
   display: grid;
@@ -164,10 +164,10 @@ li > a{
   text-align: center;
   margin-top: 100px;
   position: relative;
-  top: 20px;
+  top: 10px;
   font-size: 35px;
-  font-family: 'Mono', sans-serif;
-  color: white;
+  font-family: 'Space Mono', sans-serif;
+  color: var(--secundary-font-color);
 }
 
 .project-apresentation > img{
@@ -197,7 +197,72 @@ li > a{
   border-radius: 20px;
   background-color: whitesmoke;
   transform: scale(1.05);
-  cursor: pointer
+  cursor: pointer;
+}
+
+
+/* Section 3 */
+
+.contactbox{
+  width: 100%;
+  height: 500px;
+  background-color: var(--background-color);
+}
+
+.contacttext{
+  position: relative;
+  top: 120px;
+}
+
+.contacttext > h1{
+  font-family: 'Boldonse', sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.icon-list-box{
+  position: relative;
+  top: 180px;
+  justify-content: center;
+  display: flex;
+}
+
+.icon-list{
+  display: flex;
+  list-style: none;
+}
+
+.element-list-icon > a{
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.element-list-icon{
+  transition: transform 0.3s ease-in-out;
+}
+
+.element-list-icon:hover{
+  transform: scale(1.2);
+}
+
+.contactme{
+  text-align: center;
+  position: relative;
+  top: 180px;
+  color: var(--title-font-color);
+  font-family: 'Winky Sans', sans-serif;
+  font-size: 25px;
+}
+
+.finallytext{
+  text-align: center;
+  position: relative;
+  top: 250px;
+  font-family: 'Winky Sans', sans-serif;
+  color: bisque;
 }
 
 
